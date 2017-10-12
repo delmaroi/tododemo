@@ -5,6 +5,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import ToDoLists from './pages/ToDoLists';
+import ToDoDetails from './pages/ToDoDetails';
 import { getAsyncInjectors } from './utils/asyncInjectors';
 import injectComponent from './utils/injectComponent';
 
@@ -22,8 +23,14 @@ export default function createRoutes(store) {
   const routesProps = [
     {
       path: '/',
-      name: 'to',
+      name: 'todoLists',
       component: ToDoLists,
+      exact: true,
+    },
+    {
+      path: '/details/:todoId',
+      name: 'todoDetails',
+      component: ToDoDetails,
       exact: true,
     },
   ];
