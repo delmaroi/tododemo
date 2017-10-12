@@ -1,0 +1,6 @@
+{
+  "API_URL": "https://demo-api-qa.arabel.la/api/",
+  "LOGIN_AS_URL": "https://demo-api-qa.arabel.la/su/",
+  "WEBSOCKETS_URL": "wss://demo-api-qa.arabel.la/ws/all?subscribe-user",
+  "STRIPE_KEY": "pk_test_iafMi1XO1ZHOCZFf3cJTolJ9"
+}

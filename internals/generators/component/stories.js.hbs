@@ -1,0 +1,13 @@
+/*
+ * {{ properCase name }} Stories
+ *
+ * This contains all the stories for the {{ properCase name }} component.
+ */
+import React from 'react';
+import { storiesOf, action } from '@kadira/storybook';
+import {{ properCase name }} from './index';
+
+storiesOf('{{ properCase name }}', module)
+  .add('with text', () => (
+    <{{ properCase name }} onClick={action('clicked')}>Hello!</{{ properCase name }}>
+  ));

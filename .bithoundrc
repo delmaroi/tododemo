@@ -1,0 +1,15 @@
+{
+  "ignore": [
+    "**/config/**",
+    "**/docs/**",
+    "**/internals/**",
+    "**/server/**",
+    "**/build/**",
+    "**/flow-typed/**"
+  ],
+  "critics": {
+    "lint": {
+      "engine": "eslint"
+    }
+  }
+}

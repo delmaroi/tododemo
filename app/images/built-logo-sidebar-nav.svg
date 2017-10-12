@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="38px" viewBox="0 0 98 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-sidebar" transform="translate(-30.000000, -35.000000)">
+            <g id="Group-4" transform="translate(-2.000000, 0.000000)">
+                <g id="Group" transform="translate(32.000000, 35.000000)">
+                    <text id="Built" font-family="SequelSans-BoldBodyText, Sequel Sans" font-size="16" font-weight="bold" line-spacing="30" fill="#5A32FD">
+                        <tspan x="42" y="29">Built</tspan>
+                    </text>
+                    <text id="v.1" font-family="SequelSans-BookBodyText, Sequel Sans" font-size="10" font-weight="300" line-spacing="30" fill="#5D6675">
+                        <tspan x="86" y="25">v.1</tspan>
+                    </text>
+                    <g id="logo" transform="translate(0.000000, 0.333333)">
+                        <rect id="Rectangle-8" fill="#5A32FD" x="0.418300654" y="0.0522875817" width="8.36601307" height="37.3856209"></rect>
+                        <ellipse id="Oval-2" fill="#23E974" cx="18.5446623" cy="25.2026144" rx="12.5490196" ry="12.2352941"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

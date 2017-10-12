@@ -1,0 +1,5 @@
+build
+coverage
+flow-typed
+internals/scripts/**
+node_modules

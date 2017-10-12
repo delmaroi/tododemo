@@ -1,0 +1,15 @@
+# Don't check auto-generated stuff into git
+coverage
+build
+styleguide
+node_modules
+stats.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+junit.xml
+
+# Local configuration files
+config/**/*.local.json
