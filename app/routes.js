@@ -19,6 +19,7 @@ import PaymentPage from 'pages/PaymentPage';
 import PlacesAutocompleteExamplePage from 'pages/PlacesAutocompleteExamplePage';
 import TypographyPage from 'pages/TypographyPage';
 import InfiniteScrollPage from 'pages/InfiniteScrollPage';
+import ToDoLists from 'pages/ToDoLists';
 import { getAsyncInjectors } from './utils/asyncInjectors';
 import injectComponent from './utils/injectComponent';
 
@@ -226,6 +227,11 @@ export default function createRoutes(store) {
       path: '/mentions',
       name: 'MentionsExamplePage',
       component: MentionsExamplePage,
+    },
+    {
+      path: '/todolists',
+      name: 'ToDoLists',
+      component: ToDoLists,
     },
   ];
 
