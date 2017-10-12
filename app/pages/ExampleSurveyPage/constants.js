@@ -1,2 +1,0 @@
-export const CREATE_USER_SURVEY_ACTION = 'app/ExampleSurveyPage/CREATE_USER_SURVEY';
-export const DESTROY_EXAMPLE_SURVEY_PAGE_ACTION = 'app/ExampleSurveyPage/DESTROY_EXAMPLE_SURVEY_PAGE';

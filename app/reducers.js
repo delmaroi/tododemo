@@ -5,15 +5,8 @@
 import { fromJS } from 'immutable';
 import { combineReducers } from 'redux-immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import chatReducer from 'react-chat/lib/reducer';
 import globalReducer from 'containers/App/reducer';
-import languageProviderReducer from 'containers/LanguageProvider/reducer';
-import { modalReducer } from 'redux-modal';
-import { reducer as authenticationReducer } from 'redux-auth';
 import { reducer as backendReducer } from 'redux-connect-backend';
-import { reducer as reduxFormReducer } from 'redux-form/immutable';
-import { reducer as tableContainerReducer } from 'react-table-container';
-import builtReducer from 'built/reducer';
 
 /*
  * routeReducer
@@ -48,16 +41,9 @@ function routeReducer(state = routeInitialState, action) {
  */
 export default function createReducer(asyncReducers) {
   return combineReducers({
-    auth: authenticationReducer,
     backend: backendReducer,
-    built: builtReducer,
-    chat: chatReducer,
-    form: reduxFormReducer,
     global: globalReducer,
-    language: languageProviderReducer,
-    modal: modalReducer,
     route: routeReducer,
-    tableContainer: tableContainerReducer,
     ...asyncReducers,
   });
 }

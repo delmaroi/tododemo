@@ -39,7 +39,6 @@ import decamelizeOrderingParam from 'api-client/lib/decamelizeOrderingParam';
 // Import root app
 import App from 'containers/App';
 import appSagas from 'containers/App/sagas';
-import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */

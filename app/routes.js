@@ -4,21 +4,7 @@
 // about the code splitting business
 import React from 'react';
 import { Route } from 'react-router-dom';
-import BuiltDisplayComponentPage from 'pages/BuiltDisplayComponentPage';
-import ChatPage from 'pages/ChatPage';
-import DatepickerExamplePage from 'pages/DatepickerExamplePage';
-import ExampleTablePage from 'pages/ExampleTablePage';
-import FormsPage from 'pages/FormsPage';
-import DashboardPage from 'pages/DashboardPage';
 import HomePage from 'pages/HomePage';
-import MentionsExamplePage from 'pages/MentionsExamplePage';
-import ModalsPage from 'pages/ModalsPage';
-import OnlyForAdminsPage from 'pages/OnlyForAdminsPage';
-import OnlyForUserWithRoleUserOrAdminPage from 'pages/OnlyForUserWithRoleUserOrAdminPage';
-import PaymentPage from 'pages/PaymentPage';
-import PlacesAutocompleteExamplePage from 'pages/PlacesAutocompleteExamplePage';
-import TypographyPage from 'pages/TypographyPage';
-import InfiniteScrollPage from 'pages/InfiniteScrollPage';
 import ToDoLists from 'pages/ToDoLists';
 import { getAsyncInjectors } from './utils/asyncInjectors';
 import injectComponent from './utils/injectComponent';
