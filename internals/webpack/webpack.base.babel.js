@@ -58,21 +58,6 @@ module.exports = (options) => ({
       query: {
         limit: 10000,
       },
-    }, {
-      test: /\.(css|scss)$/,
-      use: [{
-        loader: 'style-loader',
-      }, {
-        loader: 'css-loader',
-        options: {
-          sourceMap: true,
-        },
-      }, {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: true,
-        },
-      }],
     }],
   },
   plugins: options.plugins.concat([

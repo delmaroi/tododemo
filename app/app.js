@@ -24,7 +24,6 @@ import {
 import { sagas as apiSagas } from 'redux-connect-backend';
 import { sagas as tableContainerSagas } from 'react-table-container';
 
-import LocaleProvider from 'antd/lib/locale-provider/';
 import enUS from 'antd/lib/locale-provider/en_US';
 
 import chatSagas from 'react-chat/lib/sagas';
@@ -37,15 +36,10 @@ import {
 } from 'api-client';
 import decamelizeOrderingParam from 'api-client/lib/decamelizeOrderingParam';
 
-import 'built-theme/src/style/theme-default/theme-default.scss';
-
 // Import root app
 import App from 'containers/App';
 import appSagas from 'containers/App/sagas';
 import LanguageProvider from 'containers/LanguageProvider';
-
-// Import Stripe Provider
-import { StripeProvider } from 'react-stripe-elements';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
@@ -94,19 +88,11 @@ const AppWithRouter = withRouter(App);
 const render = (messages) => {
   ReactDOM.render(
     <Provider store={store}>
-      <LocaleProvider locale={enUS}>
-        <LanguageProvider messages={messages}>
-          <AuthenticationProvider>
-            <StripeProvider apiKey={Config.STRIPE_KEY}>
-              <Router history={history}>
-                <AppWithRouter>
-                  {childRoutes}
-                </AppWithRouter>
-              </Router>
-            </StripeProvider>
-          </AuthenticationProvider>
-        </LanguageProvider>
-      </LocaleProvider>
+      <Router history={history}>
+        <AppWithRouter>
+          {childRoutes}
+        </AppWithRouter>
+      </Router>
     </Provider>,
     document.getElementById('app')
   );
