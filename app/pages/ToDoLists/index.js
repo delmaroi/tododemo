@@ -1,29 +1,32 @@
 import React, { PureComponent } from 'react';
-import { Button } from 'react-bootstrap';
-import AddTodoListItem from 'components/AddTodoListItem';
-import SearchTodoList from 'components/SearchTodoList';
-import TodoLists from 'components/TodoLists';
+import Helmet from 'react-helmet';
+import Add from 'components/Todo/Molecules/Add';
+import Search from 'components/Todo/Molecules/Search';
+import Lists from 'components/Todo/Molecules/Lists';
+import ButtonBack from 'components/Todo/Atoms/ButtonBack';
+import style from './style';
 
 export default class ToDoLists extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className="todos">
-        <h3 className="todos__title">TODO list</h3>
-        <button className="todos__back btn btn-default btn-sm">
-          <span className="glyphicon glyphicon-arrow-left" />
-          Back
-        </button>
+      <div>
+        <Helmet
+          title="TODOS App"
+          meta={[
+            { name: 'description', content: 'TODOS' },
+          ]}
+        />
+        <div style={style.todos} >
+          <h3 style={style.todos__title} >TODO list</h3>
+          <ButtonBack />
 
-        <div className="todos__inputs">
-          <AddTodoListItem />
-          <SearchTodoList />
+          <div className="todos__inputs" >
+            <Add />
+            <Search />
+          </div>
+
+          <Lists />
         </div>
-
-        <TodoLists />
-
-        <small className="todos__hint">
-          Hint: double-click a list item to edit it.
-        </small>
       </div>
     );
   }

@@ -4,8 +4,7 @@
 // about the code splitting business
 import React from 'react';
 import { Route } from 'react-router-dom';
-import HomePage from 'pages/HomePage';
-import ToDoLists from 'pages/ToDoLists';
+import ToDoLists from './pages/ToDoLists';
 import { getAsyncInjectors } from './utils/asyncInjectors';
 import injectComponent from './utils/injectComponent';
 
@@ -23,7 +22,7 @@ export default function createRoutes(store) {
   const routesProps = [
     {
       path: '/',
-      name: 'homePage',
+      name: 'to',
       component: ToDoLists,
       exact: true,
     },

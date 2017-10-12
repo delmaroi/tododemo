@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
-import TodoItem from 'components/TodoItem';
+import Item from '../Item';
 
-export default class TodoLists extends PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class Lists extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <ul className="list-group">
-        <TodoItem />
+        <Item />
         <p className="empty">
           List is empty
         </p>

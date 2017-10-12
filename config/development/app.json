@@ -1,6 +1,3 @@
 {
-  "API_URL": "https://demo-api-dev.arabel.la/api/",
-  "LOGIN_AS_URL": "https://demo-api-dev.arabel.la/su/",
-  "WEBSOCKETS_URL": "wss://demo-api-dev.arabel.la/ws/all?subscribe-user",
-  "STRIPE_KEY": "pk_test_iafMi1XO1ZHOCZFf3cJTolJ9"
+  "API_URL": "https://todos.venturedevs.net/api/"
 }

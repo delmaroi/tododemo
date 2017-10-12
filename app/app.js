@@ -25,8 +25,8 @@ import {
 import decamelizeOrderingParam from 'api-client/lib/decamelizeOrderingParam';
 
 // Import root app
-import App from 'containers/App';
-import appSagas from 'containers/App/sagas';
+import App from './containers/App';
+import appSagas from './containers/App/sagas';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
@@ -37,6 +37,8 @@ import 'file-loader?name=[name].[ext]!./.htaccess'; // eslint-disable-line impor
 
 import configureStore from './store';
 import createRoutes from './routes';
+
+import './styles/style.scss';
 
 setBaseUrl(Config.API_URL);
 addTransformParamsFn(decamelizeOrderingParam);
